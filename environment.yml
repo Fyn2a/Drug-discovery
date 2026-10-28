@@ -1,0 +1,22 @@
+# Create with:  conda env create -f environment.yml
+# Activate with: conda activate flavi-qsar
+#
+# Versions are pinned to minor releases to keep results reproducible. rdkit and
+# the scientific stack all come from conda-forge: mixing conda-forge and pip for
+# numpy is what broke the previous Drug_Project environment, so nothing here is
+# installed with pip.
+name: flavi-qsar
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy=1.26.*
+  - pandas=2.2.*
+  - scipy=1.13.*
+  - scikit-learn=1.5.*
+  - rdkit=2024.03.*
+  - matplotlib=3.8.*
+  - seaborn=0.13.*
+  - lightgbm=4.3.*
+  - jupyterlab=4.2.*
+  - pytest=8.2.*

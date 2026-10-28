@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+
+# Data: raw pulls and intermediates are reproducible from scripts/ and are not
+# version controlled. data/processed/ IS tracked, so the modelling dataset that
+# produced the reported results stays pinned to the commit that reports them.
+data/raw/
+data/interim/
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+
+# Generated figures
+reports/figures/*
+!reports/figures/.gitkeep
